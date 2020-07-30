@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Zuora Rate Plan ID Display",
+    "description": "Display the Rate Plan ID next to the Title",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.zuora.com/*Product.do*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
